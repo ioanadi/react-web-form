@@ -1,0 +1,48 @@
+@import 'vars.scss';
+
+#root {
+    max-width: 992px;
+    margin: 1rem auto;
+}
+
+.form {
+    .form-input-container {
+        width: 100%;
+        margin: .5rem 0;
+        padding: 0 0 1.2rem 0;
+        position: relative;
+        @media (min-width: 768px) { width: 17.5rem; }
+        label, input { width: 100%; }
+        label > span {
+            position: absolute;
+            right: 0;
+            font-size: $font-xs;
+            font-style: italic; 
+            color: $info-text-color;
+        }
+    }
+    .form-error {
+        position: absolute;
+        bottom: 0;
+        margin-top: 0;
+        font-size: $font-xs;
+        color: $error-color
+    }
+} 
+
+button.custom-button {
+    max-width: 7.5rem;
+    margin: .5rem 0 .5rem auto;
+    padding: .5rem 1rem;
+    border-radius: 5px;;
+    background-color: $success-color;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+    &.primary { background-color: $primary-color; }
+    span {
+        font-size: 1rem;
+        color: white;
+        text-transform: capitalize;
+    }
+}
+
+.home { text-align: center; }

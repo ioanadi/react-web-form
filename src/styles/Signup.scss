@@ -1,0 +1,41 @@
+@import 'vars.scss';
+
+// USER
+.signup-user__form { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.signup-user__form-pass-checker {
+    margin: .5rem 0;
+    font-size: $font-xs;
+    color: $info-text-color;
+    line-height: 1.5;
+    span { 
+        margin-left: .75rem;
+        &.rule-error {
+            color: $error-color;
+        }
+    }
+}
+
+// PRIVACY
+.signup__privacy {
+    display: flex;
+    flex-direction: column;
+    .signup__privacy-checkbox {
+        margin-bottom: 1rem;
+    }
+}
+
+// DONE
+.signup-done {
+    color: $success-color;
+    .signup-done__checkmark {
+        font-size: 60px;
+        text-align: center;
+    }
+    h2 { margin: 1rem 4rem; }
+}
+
+
